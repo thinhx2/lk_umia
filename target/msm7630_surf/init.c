@@ -81,27 +81,27 @@ static crypto_engine_type platform_ce_type = CRYPTO_ENGINE_TYPE_HW;
 static struct ptentry board_part_list[] = {
 	{
 	 .start = 0,
-	 .length = 10 /* In MB */ ,
+	 .length = 15 /* In MB */ ,
 	 .name = "boot",
 	 },
 	{
 	 .start = DIFF_START_ADDR,
-	 .length = 256 /* In MB */ ,
+	 .length = 1024 /* In MB */ ,
 	 .name = "system",
 	 },
 	{
 	 .start = DIFF_START_ADDR,
-	 .length = 5 /* In MB */ ,
+	 .length = 100 /* In MB */ ,
 	 .name = "cache",
 	 },
 	{
 	 .start = DIFF_START_ADDR,
-	 .length = 1 /* In MB */ ,
+	 .length = 10 /* In MB */ ,
 	 .name = "misc",
 	 },
 	{
 	 .start = DIFF_START_ADDR,
-	 .length = 1 /* In MB */ ,
+	 .length = 10 /* In MB */ ,
 	 .name = "devinfo",
 	 },
 	{
@@ -111,12 +111,12 @@ static struct ptentry board_part_list[] = {
 	 },
 	{
 	 .start = DIFF_START_ADDR,
-	 .length = 3 /* In MB */ ,
+	 .length = 5 /* In MB */ ,
 	 .name = "persist",
 	 },
 	{
 	 .start = DIFF_START_ADDR,
-	 .length = 10 /* In MB */ ,
+	 .length = 15 /* In MB */ ,
 	 .name = "recovery",
 	 },
 };
